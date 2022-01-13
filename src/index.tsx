@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
+//특정ID를 가지고 있는 DOM을 가져와서 그리겠다
 ReactDOM.render(
   <React.StrictMode>
     <App />
