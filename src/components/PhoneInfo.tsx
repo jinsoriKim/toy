@@ -51,7 +51,9 @@ const PhoneInfo = (props : any) => {
             [e.target.name]:e.target.value
         });
     }
+    console.log(props.info.name);
     return (
+        
         <div style={style}>
            {
                editing ?

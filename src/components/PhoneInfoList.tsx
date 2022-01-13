@@ -14,7 +14,7 @@ const PhoneInfoList = (props : any) => {
             info={info} 
             key={info.id}/>)
     )
-
+    console.log("rendering list")
     return (
         <div>
             {list}

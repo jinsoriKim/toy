@@ -14,10 +14,12 @@ function App() {
   //const id = useRef(0);
   //const information : any[] = [];
   const [information, setInformation] = useState([
-    {id :'', name : '', phone : ''}
+    {id :'0', name : '홍길동', phone : '010-0000-0001'},
+    {id :'1', name : '김민준', phone : '010-0000-0002'},
+    {id :'2', name : '김벨로퍼트', phone : '010-0000-0003'}
   ]);
 
-  const [id, setId] = useState(1);
+  const [id, setId] = useState(3);
   
   const handleCreate = (data:any) => {
     //console.log(data);
