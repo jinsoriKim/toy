@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/toy.git/static/css/main.e6c13ad2.css",
+    "main.js": "/toy.git/static/js/main.a2bb44d5.js",
+    "static/js/787.3851c064.chunk.js": "/toy.git/static/js/787.3851c064.chunk.js",
+    "index.html": "/toy.git/index.html",
+    "main.e6c13ad2.css.map": "/toy.git/static/css/main.e6c13ad2.css.map",
+    "main.a2bb44d5.js.map": "/toy.git/static/js/main.a2bb44d5.js.map",
+    "787.3851c064.chunk.js.map": "/toy.git/static/js/787.3851c064.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.a2bb44d5.js"
+  ]
+}
