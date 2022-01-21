@@ -9,7 +9,7 @@ import PhoneInfoList from './components/PhoneInfoList';
 import { info } from 'console';
 import CoinTracker from './components/CoinTracker';
 import MovieApp from './components/MovieApp';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./routes/Home";
 import Detail from './routes/Detail';
 function KmToMiles() {
