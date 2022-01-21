@@ -1,4 +1,4 @@
-import React, { useState, Fragment } from 'react';
+import React, { useState, Fragment, useEffect } from 'react';
 
 const PhoneInfo = (props : any) => {
     const [editing, setEditing] = useState(false);
@@ -51,7 +51,10 @@ const PhoneInfo = (props : any) => {
             [e.target.name]:e.target.value
         });
     }
-    console.log(props.info.name);
+    useEffect(() => {
+        console.log(props.info.name);
+    }, []) 
+    
     return (
         
         <div style={style}>
@@ -93,4 +96,8 @@ const PhoneInfo = (props : any) => {
 };
 
 
-export default PhoneInfo;
+//export default PhoneInfo ;
+
+export default React.memo(PhoneInfo);
+
+//export const PhoneInfo = React.memo(PhoneInfo);

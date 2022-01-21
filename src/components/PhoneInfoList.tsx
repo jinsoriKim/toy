@@ -26,4 +26,5 @@ PhoneInfoList.defaultProps = {
     data : []
 }*/
 
-export default PhoneInfoList;
+//export default PhoneInfoList;
+export default React.memo(PhoneInfoList);

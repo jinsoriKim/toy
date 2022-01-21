@@ -1,4 +1,4 @@
-import React, { useState, useEffect }  from 'react';
+import React, { useState, useEffect, useRef }  from 'react';
 import { isThisTypeNode } from 'typescript';
 
 interface Props{
@@ -7,6 +7,7 @@ interface Props{
 
 const PhoneForm = (props : any) => {
     //const [name, setName] = useState("");
+    const nameInput = useRef<HTMLInputElement>(null);
 
     const [form, setForm] = useState({
         name : '',
@@ -34,6 +35,8 @@ const PhoneForm = (props : any) => {
             name : '',
             phone : ''
         });
+        nameInput.current.focus();
+     
     }
 
     return (
@@ -42,6 +45,7 @@ const PhoneForm = (props : any) => {
             placeholder= "이름" 
             onChange={handleChange} 
             value={name}
+            ref={nameInput}
             />
             <input name ="phone"
             placeholder= "전화번호" 
@@ -54,4 +58,6 @@ const PhoneForm = (props : any) => {
 };
 export {}
 
-export default PhoneForm;
+//export default PhoneForm;
+
+export default React.memo(PhoneForm);
